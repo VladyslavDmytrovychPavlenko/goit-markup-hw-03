@@ -2,6 +2,7 @@
    --primary-text-color: #757575;
    --secondary-text-color: #212121;
    --accent-color: #2196F3;
+   --accent-color-2:#188CE8;
    --primary-bg-color:#FFFFFF;
    --text-color-1:#FFFFFF;
    --text-color-2:#000000;
@@ -33,16 +34,28 @@ img {
    padding-left: 15px;
    padding-right: 15px;
  }
- .no-padding {
+.no-padding {
    padding-bottom: 94px;
    padding-top: 0;
- }
+}
 body {
    background-color: var(--primary-bg-color);
    color: var(--primary-text-color);
    font-family: Roboto, sans-serif;
    letter-spacing: 0.03em;
 }
+.visually-hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+} 
 .team {
    background-color: var(--background-color2);
 }
@@ -206,6 +219,10 @@ body {
    text-decoration: none;
    cursor: pointer;
 }
+.button:hover,
+.button:focus {
+   background-color: var(--accent-color-2);
+}
 .hero1 {
    color: var(--text-color-1);
    font-weight: 900;
@@ -216,6 +233,9 @@ body {
    text-transform: uppercase;
    margin-top: 0;
    margin-bottom: 30px;
+   max-width: 696px;
+   margin-left: auto;
+   margin-right: auto;
 }
 /* section-benefits */
 .benefits-item:not(last-child) {
@@ -349,7 +369,6 @@ body {
    font-weight: 500;
    font-size: 16px;
    line-height: 1.6;
-   box-shadow: 0px 3px 1px var(--box-shadov-color1);
    border-radius: 4px;
    padding: 6px 22px;
    text-align: center;
@@ -362,6 +381,7 @@ body {
 .button-type:focus {
    color: var(--text-color-1);
    background-color: var(--accent-color);
+   box-shadow: 0px 3px 1px var(--box-shadov-color1);
 }
 .everyone {
    padding: 6px 25px;
